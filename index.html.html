@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avengers: Doomsday Viewing Checklist</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+
+:root {
+  --bg: #030a0a;
+  --surface: #0d1a15;
+  --surface-2: #14221b;
+  --surface-raised: #1d3324;
+  --ink: #e8eee9;
+  --muted: #a8b5ac;
+  --line: #24352c;
+  --line-strong: #2f4538;
+  --accent-deep: #1f4b3a;
+  --accent-mid: #2f6b4a;
+  --accent-bright: #3a7d55;
+  --magic: #4cff7a;
+  --metal: #a8a46a;
+  --silver: #b8c0bc;
+  --accent-soft: #163227;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.45), 0 10px 28px rgba(0, 0, 0, 0.35);
+  --pill-w-bg: #14532d;
+  --pill-w-fg: #ffffff;
+  --pill-p-bg: #7a4a0d;
+  --pill-p-fg: #ffffff;
+  --pill-x-bg: #8b1e1e;
+  --pill-x-fg: #ffffff;
+  --pill-r-bg: #1e3a8a;
+  --pill-r-fg: #ffffff;
+  --pill-n-bg: #3a4240;
+  --pill-n-fg: #ffffff;
+  --pill-e-bg: #165a45;
+  --pill-e-fg: #ffffff;
+  --callout-bg: #0f2418;
+  --callout-border: #a8a46a;
+  --focus: 0 0 0 3px rgba(76, 255, 122, 0.35);
+  --glow: 0 0 0 1px rgba(76, 255, 122, 0.35), 0 0 12px rgba(76, 255, 122, 0.25);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg);
+  background-image: radial-gradient(ellipse 120% 28rem at 50% 0%, rgba(58, 125, 85, 0.2) 0%, rgba(31, 75, 58, 0.08) 42%, transparent 72%);
+  background-repeat: no-repeat;
+  color: var(--ink);
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem 1.15rem 3rem;
+}
+
+header.page-header {
+  position: relative;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--metal);
+}
+
+header.page-header p.kicker {
+  margin: 0 0 0.45rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--magic);
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--silver);
+  background: linear-gradient(180deg, #e8eee9 0%, #b8c0bc 58%, #a8a46a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    line-height: 1.2;
+    padding-bottom: 0.12em;
+  }
+}
+
+.lede {
+  margin: 0;
+  max-width: 48rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--metal);
+}
+
+section.block {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-top-color: var(--metal);
+  border-radius: 14px;
+  padding: 1.15rem 1.15rem 1.25rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+}
+
+/* Filters */
+.filters { margin-bottom: 0.85rem; }
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.filter-row.tools {
+  margin-top: 0.25rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--metal);
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+}
+
+.seg {
+  appearance: none;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.seg:hover { background: var(--surface-2); }
+
+.seg[aria-pressed="true"] {
+  background: var(--accent-deep);
+  color: #ffffff;
+  border-color: var(--accent-mid);
+}
+
+.seg[aria-pressed="true"]:hover {
+  background: var(--accent-bright);
+}
+
+.seg .count {
+  display: inline-block;
+  margin-left: 0.28rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  font-size: 0.78em;
+  color: inherit;
+}
+
+.seg:focus-visible, .toggle input:focus-visible + .switch, select:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+  margin: 0.85rem 0 0;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin-left: auto;
+}
+
+.type-field {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.type-field label { color: var(--muted); font-weight: 600; }
+
+select {
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  background-color: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+  color-scheme: light;
+}
+select option,
+select option:checked,
+select option:hover,
+select option:focus {
+  color: #171717;
+  background-color: #ffffff;
+  color-scheme: light;
+}
+
+.view-line {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Toggle */
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.switch {
+  width: 2.4rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: var(--line-strong);
+  position: relative;
+  flex: none;
+  transition: background 0.15s ease;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(1.35rem - 4px);
+  height: calc(1.35rem - 4px);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: transform 0.15s ease;
+}
+
+.toggle input:checked + .switch { background: var(--accent-mid); }
+.toggle input:checked + .switch::after { transform: translateX(1.05rem); }
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 0;
+  font-size: 0.9rem;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-2);
+  text-align: left;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1px solid var(--metal);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+tbody td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface-2) 55%, transparent); }
+
+td.title { font-weight: 650; min-width: 11rem; }
+td.released, td.type-col { white-space: nowrap; color: var(--muted); }
+td.note { color: var(--ink); min-width: 11.5rem; }
+td.streaming { min-width: 7.5rem; vertical-align: middle; }
+
+.stream-tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  color: #e8eee9;
+  background: #1d3324;
+  border: 1px solid #2f4538;
+}
+.stream-tag-none,
+.stream-tag-unverified {
+  color: #a8b5ac;
+  background: #14221b;
+  border-color: #24352c;
+}
+
+.pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.pill-W { background: var(--pill-w-bg); color: var(--pill-w-fg); }
+.pill-P { background: var(--pill-p-bg); color: var(--pill-p-fg); }
+.pill-X { background: var(--pill-x-bg); color: var(--pill-x-fg); }
+.pill-R { background: var(--pill-r-bg); color: var(--pill-r-fg); }
+.pill-N { background: var(--pill-n-bg); color: var(--pill-n-fg); }
+.pill-tier { background: var(--pill-n-bg); color: var(--pill-n-fg); }
+.pill-tier-E { background: var(--pill-e-bg); color: var(--pill-e-fg); }
+
+.status-select-wrap {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border-radius: 999px;
+  max-width: 100%;
+}
+.status-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 0.28em solid transparent;
+  border-right: 0.28em solid transparent;
+  border-top: 0.32em solid currentColor;
+  transform: translateY(-40%);
+  pointer-events: none;
+  opacity: 0.8;
+}
+select.status-select {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.12rem 1.4rem 0.12rem 0.55rem;
+  max-width: 13rem;
+  color-scheme: light;
+}
+.status-select-wrap.pill-W select.status-select { color: var(--pill-w-fg); background-color: var(--pill-w-bg); }
+.status-select-wrap.pill-P select.status-select { color: var(--pill-p-fg); background-color: var(--pill-p-bg); }
+.status-select-wrap.pill-X select.status-select { color: var(--pill-x-fg); background-color: var(--pill-x-bg); }
+.status-select-wrap.pill-R select.status-select { color: var(--pill-r-fg); background-color: var(--pill-r-bg); }
+.status-select-wrap.pill-N select.status-select { color: var(--pill-n-fg); background-color: var(--pill-n-bg); }
+select.status-select option,
+select.status-select option:checked,
+select.status-select option:hover,
+select.status-select option:focus {
+  color: #171717 !important;
+  background-color: #ffffff !important;
+  color-scheme: light;
+}
+select.status-select:hover {
+  box-shadow: inset 0 0 0 1px currentColor;
+}
+select.status-select:focus,
+select.status-select:focus-visible,
+.status-select-wrap:focus-within {
+  outline: none;
+  box-shadow: var(--glow);
+}
+.print-status { display: none; }
+
+.status-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.edited-mark {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--magic);
+  border: 1px solid rgba(76, 255, 122, 0.7);
+  border-radius: 999px;
+  padding: 0 0.35rem;
+  line-height: 1.4;
+  background: rgba(76, 255, 122, 0.08);
+  box-shadow: var(--glow);
+}
+
+.tools-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+}
+
+.action-btn {
+  appearance: none;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: #ffffff;
+  background: var(--accent-deep);
+  border: 1px solid var(--accent-mid);
+  border-radius: 12px;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.action-btn:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+.action-btn:focus-visible { outline: none; box-shadow: var(--glow); }
+
+.export-wrap {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+.export-wrap > .action-btn { width: 100%; }
+.export-menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  z-index: 40;
+  min-width: 100%;
+  width: max-content;
+  max-width: min(18rem, calc(100vw - 1.7rem));
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  background: var(--surface-raised);
+  border: 1px solid var(--metal);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+.export-menu[hidden] { display: none !important; }
+.export-menu li { margin: 0; }
+.export-menu-item {
+  appearance: none;
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: #ffffff;
+  background: var(--accent-deep);
+  border: 1px solid var(--accent-mid);
+  border-radius: 10px;
+  padding: 0.5rem 0.85rem;
+  margin: 0.15rem 0;
+  cursor: pointer;
+  text-align: left;
+  white-space: normal;
+  box-sizing: border-box;
+}
+.export-menu-item:hover { background: var(--accent-bright); border-color: var(--accent-bright); }
+.export-menu-item:focus-visible { outline: none; box-shadow: var(--glow); }
+
+.import-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.import-dialog[hidden] { display: none !important; }
+.import-dialog-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 10, 10, 0.72);
+}
+.import-dialog-panel {
+  position: relative;
+  z-index: 1;
+  width: min(36rem, 100%);
+  max-height: min(80vh, 40rem);
+  overflow: auto;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-top-color: var(--metal);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.15rem 1.15rem 1.2rem;
+}
+.import-dialog-panel h2 {
+  margin: 0 0 0.75rem;
+  color: var(--metal);
+  letter-spacing: 0.04em;
+}
+.import-error {
+  margin: 0 0 0.5rem;
+  color: #f0a8a8;
+  font-weight: 650;
+}
+.import-counts {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--ink);
+}
+.import-counts li { margin: 0.25rem 0; }
+.import-review-heading {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  color: var(--metal);
+}
+.import-review-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.import-review-item {
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+}
+.import-review-imported,
+.import-review-reason,
+.import-review-candidate,
+.import-review-empty {
+  margin: 0 0 0.4rem;
+}
+.import-review-reason { color: #f0a8a8; }
+.import-review-candidate { color: var(--muted); }
+.import-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+.import-ignore-btn {
+  background: var(--surface-raised);
+  border-color: var(--line-strong);
+}
+.import-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.print-header { display: none; }
+
+@page { margin: 0.6in 0.55in; }
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  html, body {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000 !important;
+  }
+  .wrap { max-width: none; padding: 0; margin: 0; }
+  .filters, .no-print, .page-actions, .action-btn, .toggle, .type-field, .filter-controls, .export-wrap, .export-menu, .import-dialog, #import-file { display: none !important; }
+  header.page-header {
+    border-bottom: 2px solid #000 !important;
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.35rem;
+    background: none !important;
+  }
+  header.page-header::before { display: none !important; }
+  h1, h2 {
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: #000 !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  header.page-header p.kicker,
+  header.page-header .lede { color: #000 !important; letter-spacing: 0.12em; }
+  .edited-mark { box-shadow: none !important; background: none !important; color: #000 !important; border-color: #000 !important; }
+  .print-header {
+    display: block !important;
+    margin: 0 0 0.7rem;
+    font-size: 10pt;
+    color: #000;
+  }
+  section.block {
+    background: #fff !important;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 0.8rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  section.checklist-block {
+    break-inside: auto;
+    page-break-inside: auto;
+    border: none;
+    padding: 0.2rem 0 0.6rem;
+  }
+  .table-wrap {
+    overflow: visible;
+    border: none;
+  }
+  table {
+    min-width: 0;
+    width: 100%;
+    font-size: 9.5pt;
+  }
+  thead { display: table-header-group; }
+  thead th {
+    background: #eee !important;
+    color: #000;
+    position: static;
+    border-bottom: 1px solid #444;
+  }
+  tbody tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  tbody td, tbody td.released, tbody td.type-col, tbody td.note, tbody td.streaming, .lede, .table-note {
+    color: #000;
+  }
+  .stream-tag, .stream-tag-none, .stream-tag-unverified {
+    background: #eee !important;
+    color: #000 !important;
+    border: 1px solid #444 !important;
+  }
+  tbody tr:nth-child(even) { background: #f3f3f3 !important; }
+  .status-select-wrap, select.status-select {
+    display: none !important;
+  }
+  .print-status {
+    display: inline-block !important;
+  }
+  .print-status, .pill {
+    box-shadow: none;
+    border: 1px solid #444;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .pill-W, .print-status.pill-W { background: #dcfce7 !important; color: #14532d !important; }
+  .pill-P, .print-status.pill-P { background: #fef3c7 !important; color: #854d0e !important; }
+  .pill-X, .print-status.pill-X { background: #fee2e2 !important; color: #991b1b !important; }
+  .pill-R, .print-status.pill-R, .pill-tier-E { background: #dbeafe !important; color: #1e40af !important; }
+  .pill-N, .print-status.pill-N, .pill-tier { background: #e8e6e1 !important; color: #44403c !important; }
+  .edited-mark {
+    color: #000;
+    border-color: #000;
+  }
+  footer.page-footer { color: #000; }
+}
+
+.empty {
+  display: none;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.empty.visible { display: block; }
+
+.table-note {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .type-field { margin-left: 0; }
+}
+
+/* Lists */
+ol.essentials, ul.notes {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+ol.essentials li, ul.notes li {
+  margin: 0.4rem 0;
+}
+
+.callout {
+  margin-top: 1rem;
+  background: var(--callout-bg);
+  border-left: 4px solid var(--callout-border);
+  border-radius: 0 10px 10px 0;
+  padding: 0.85rem 1rem;
+}
+
+.callout .lead {
+  font-weight: 800;
+  margin: 0 0 0.25rem;
+}
+
+.callout p { margin: 0; }
+
+footer.page-footer {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.25rem 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer.page-footer p { margin: 0.35rem 0; }
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .wrap {
+    max-width: 100%;
+    padding: 1.1rem 0.85rem 2.25rem;
+    overflow-x: hidden;
+  }
+
+  h1, .lede, .table-note, .view-line, .kicker, li, td, dd, dt, p {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+
+  .filters,
+  .filter-row,
+  .filter-row.tools,
+  .filter-controls,
+  .tools-left {
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .filter-row.tools {
+    justify-content: flex-start;
+  }
+
+  .filter-controls,
+  .type-field {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .type-field select,
+  select#type-filter {
+    max-width: 100%;
+  }
+
+  .page-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.85rem;
+  }
+
+  .page-actions .action-btn {
+    width: 100%;
+    min-height: 44px;
+    max-width: none;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+    padding: 0.45rem 0.5rem;
+  }
+
+  .page-actions .export-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .export-menu-item {
+    min-height: 44px;
+  }
+
+  .seg {
+    min-height: 44px;
+    max-width: 100%;
+  }
+
+  .view-line {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  section.block,
+  .table-wrap {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .table-wrap {
+    overflow: visible;
+    border: none;
+    border-radius: 0;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.65rem;
+    row-gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.9rem 0.95rem;
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--surface);
+  }
+
+  tbody tr[hidden] {
+    display: none !important;
+  }
+
+  tbody td {
+    display: block;
+    border: 0;
+    padding: 0;
+    min-width: 0;
+    vertical-align: middle;
+  }
+
+  td.title {
+    flex: 1 1 100%;
+    order: 1;
+    font-size: 1.12rem;
+    font-weight: 750;
+    line-height: 1.3;
+    min-width: 0;
+    margin: 0 0 0.85rem;
+  }
+
+  td.status-cell {
+    flex: 1 1 100%;
+    order: 2;
+    margin: 0 0 0.9rem;
+  }
+
+  td.status-cell .status-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  td.status-cell .status-select-wrap {
+    min-height: 44px;
+  }
+
+  td.status-cell select.status-select {
+    min-height: 44px;
+    min-width: 11rem;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1.75rem 0.5rem 0.75rem;
+  }
+
+  td.released,
+  td.type-col,
+  tbody td:nth-child(5) {
+    flex: 0 1 auto;
+    order: 3;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    color: var(--muted);
+    min-width: 0;
+  }
+
+  tbody td:nth-child(5) {
+    color: inherit;
+  }
+
+  td.note {
+    flex: 1 1 100%;
+    order: 4;
+    min-width: 0;
+    margin-top: 0.55rem;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+
+  td.streaming {
+    flex: 1 1 100%;
+    order: 5;
+    min-width: 0;
+    margin-top: 0.55rem;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <p class="kicker">Marvel viewing guide</p>
+      <h1>Avengers: Doomsday Viewing Checklist</h1>
+      <p class="lede">Every Marvel film and show from 1986 to November 2026 in release order. Tiers run from skippable to deep to essential depending on how much each one feeds into Avengers: Doomsday, out December 18, 2026.</p>
+      <div class="page-actions no-print" role="group" aria-label="Checklist actions">
+        <button type="button" class="action-btn" id="reset-defaults">Reset to defaults</button>
+        <button type="button" class="action-btn" id="update-baseline">Update baseline</button>
+        <div class="export-wrap" id="export-menu-wrap">
+          <button type="button" class="action-btn" id="export-toggle" aria-expanded="false" aria-haspopup="menu" aria-controls="export-menu">Export</button>
+          <ul class="export-menu no-print" id="export-menu" role="menu" hidden aria-label="Export options">
+            <li role="none"><button type="button" class="export-menu-item" role="menuitem" id="download-updated">Download HTML</button></li>
+            <li role="none"><button type="button" class="export-menu-item" role="menuitem" id="print-checklist">Print PDF</button></li>
+            <li role="none"><button type="button" class="export-menu-item" role="menuitem" id="export-progress">Export Progress</button></li>
+          </ul>
+        </div>
+        <button type="button" class="action-btn" id="import-progress">Import</button>
+        <input type="file" id="import-file" class="no-print" accept=".json,application/json" hidden>
+      </div>
+    </header>
+
+    <main>
+      <section class="block checklist-block" aria-labelledby="checklist-heading">
+        <h2 id="checklist-heading">Full checklist, in release order</h2>
+        <p class="print-header" id="print-header"></p>
+
+        <div class="filters no-print">
+          <div class="filter-row" role="group" aria-label="Filter by tier">
+            <button type="button" class="seg" data-tab="all" aria-pressed="true">All <span class="count">125</span></button><button type="button" class="seg" data-tab="E" aria-pressed="false">Essential <span class="count">17</span></button><button type="button" class="seg" data-tab="R" aria-pressed="false">Recommended <span class="count">15</span></button><button type="button" class="seg" data-tab="D" aria-pressed="false">Deep cut <span class="count">46</span></button><button type="button" class="seg" data-tab="S" aria-pressed="false">Skippable <span class="count">47</span></button>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filter by status">
+            <button type="button" class="seg" data-tab="sW" aria-pressed="false">Watched <span class="count">0</span></button><button type="button" class="seg" data-tab="sN" aria-pressed="false">Not watched <span class="count">125</span></button><button type="button" class="seg" data-tab="sP" aria-pressed="false">Partial <span class="count">0</span></button><button type="button" class="seg" data-tab="sX" aria-pressed="false">Excluded <span class="count">0</span></button><button type="button" class="seg" data-tab="sR" aria-pressed="false">Review summary <span class="count">0</span></button>
+            <div class="filter-controls">
+              <div class="type-field">
+                <label for="type-filter">Type</label>
+                <select id="type-filter"><option value="All types" selected>All types</option>
+<option value="Film">Film</option>
+<option value="Animated film">Animated film</option>
+<option value="TV film">TV film</option>
+<option value="Series">Series</option>
+<option value="Animated series">Animated series</option>
+<option value="Special">Special</option></select>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="hide-watched">
+                <span class="switch" aria-hidden="true"></span>
+                Hide watched
+              </label>
+            </div>
+          </div>
+          <div class="filter-row tools">
+            <p class="view-line" id="view-line">Watched: 0 of 125 in this view · Essentials: 0 of 17</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Status</th>
+                <th scope="col">Released</th>
+                <th scope="col">Title</th>
+                <th scope="col">Type</th>
+                <th scope="col">Tier</th>
+                <th scope="col">Why it matters</th>
+                <th scope="col">Streaming</th>
+              </tr>
+            </thead>
+            <!-- Entry IDs (data-id 001–125) are permanent. Never reuse or renumber an ID. New entries get the next number appended. IDs are used for export/import and are never displayed. -->
+    <tbody id="checklist-body">
+    <tr data-id="001" data-title="Howard the Duck" data-status="N" data-tier="S" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Howard the Duck"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 1, 1986</td><td class="title">Howard the Duck</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Lucasfilm oddity; zero Doomsday relevance.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="002" data-title="The Punisher (Dolph Lundgren)" data-status="N" data-tier="S" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Punisher (Dolph Lundgren)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 5, 1989</td><td class="title">The Punisher (Dolph Lundgren)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Early Punisher take; hit US home video only in 1991.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="003" data-title="Captain America (1990)" data-status="N" data-tier="S" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain America (1990)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">1990</td><td class="title">Captain America (1990)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Low-budget curio; US home video release in 1992.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="004" data-title="X-Men: The Animated Series (1992–97)" data-status="N" data-tier="D" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men: The Animated Series (1992–97)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 31, 1992</td><td class="title">X-Men: The Animated Series (1992–97)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">The continuity X-Men &#x27;97 picks up; separate from the films.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="005" data-title="The Fantastic Four (Corman)" data-status="N" data-tier="S" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Fantastic Four (Corman)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">1994</td><td class="title">The Fantastic Four (Corman)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Never officially released; bootleg-only curiosity.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="006" data-title="Generation X" data-status="N" data-tier="S" data-type="TV film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Generation X"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 20, 1996</td><td class="title">Generation X</td><td class="type-col">TV film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Fox TV-movie pilot with Emma Frost and Banshee; no Doomsday tie.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="007" data-title="Blade" data-status="N" data-tier="D" data-type="Film" data-streaming="Peacock"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Blade"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 21, 1998</td><td class="title">Blade</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Snipes&#x27; Blade resurfaces in Deadpool &amp; Wolverine&#x27;s Void.</td><td class="streaming"><span class="stream-tag">Peacock</span></td></tr>
+    <tr data-id="008" data-title="X-Men" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 14, 2000</td><td class="title">X-Men</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Stewart, McKellen, Marsden, Romijn: the Fox X-Men who return in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="009" data-title="Blade II" data-status="N" data-tier="D" data-type="Film" data-streaming="Peacock"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Blade II"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 22, 2002</td><td class="title">Blade II</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Fun sequel; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Peacock</span></td></tr>
+    <tr data-id="010" data-title="Spider-Man (Raimi)" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man (Raimi)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 3, 2002</td><td class="title">Spider-Man (Raimi)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Maguire&#x27;s Spidey; payoff is No Way Home.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="011" data-title="Daredevil (Affleck)" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Daredevil (Affleck)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 14, 2003</td><td class="title">Daredevil (Affleck)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Only echo is Garner&#x27;s Elektra cameo in Deadpool &amp; Wolverine.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="012" data-title="X2: X-Men United" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X2: X-Men United"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 2, 2003</td><td class="title">X2: X-Men United</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Best Fox X-Men; adds Alan Cumming&#x27;s Nightcrawler (in Doomsday).</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="013" data-title="Hulk (Ang Lee)" data-status="N" data-tier="S" data-type="Film" data-streaming="YouTube"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Hulk (Ang Lee)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 20, 2003</td><td class="title">Hulk (Ang Lee)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Standalone take; not MCU canon.</td><td class="streaming"><span class="stream-tag">YouTube</span></td></tr>
+    <tr data-id="014" data-title="The Punisher (Thomas Jane)" data-status="N" data-tier="S" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Punisher (Thomas Jane)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 16, 2004</td><td class="title">The Punisher (Thomas Jane)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Standalone; Bernthal&#x27;s Frank is the one that matters now.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="015" data-title="Spider-Man 2" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man 2"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 30, 2004</td><td class="title">Spider-Man 2</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Doc Ock origin, revisited in No Way Home.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="016" data-title="Blade: Trinity" data-status="N" data-tier="S" data-type="Film" data-streaming="Peacock"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Blade: Trinity"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Dec 8, 2004</td><td class="title">Blade: Trinity</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Franchise low point; skip.</td><td class="streaming"><span class="stream-tag">Peacock</span></td></tr>
+    <tr data-id="017" data-title="Elektra" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Elektra"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 14, 2005</td><td class="title">Elektra</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Only payoff is Garner&#x27;s Deadpool &amp; Wolverine cameo.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="018" data-title="Man-Thing" data-status="N" data-tier="S" data-type="TV film" data-streaming="Tubi"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Man-Thing"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 30, 2005</td><td class="title">Man-Thing</td><td class="type-col">TV film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Syfy TV-movie curio.</td><td class="streaming"><span class="stream-tag">Tubi</span></td></tr>
+    <tr data-id="019" data-title="Fantastic Four (2005)" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Fantastic Four (2005)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 8, 2005</td><td class="title">Fantastic Four (2005)</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Chris Evans&#x27; Johnny Storm, reprised as a gag in Deadpool &amp; Wolverine.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="020" data-title="X-Men: The Last Stand" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men: The Last Stand"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 26, 2006</td><td class="title">X-Men: The Last Stand</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Kelsey Grammer&#x27;s Beast debuts; where the original trio&#x27;s story left off.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="021" data-title="Ghost Rider" data-status="N" data-tier="S" data-type="Film" data-streaming="Starz, YouTube TV"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ghost Rider"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 16, 2007</td><td class="title">Ghost Rider</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">No Doomsday relevance.</td><td class="streaming"><span class="stream-tag">Starz, YouTube TV</span></td></tr>
+    <tr data-id="022" data-title="Spider-Man 3" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man 3"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 4, 2007</td><td class="title">Spider-Man 3</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Sandman returns in No Way Home; otherwise skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="023" data-title="Fantastic Four: Rise of the Silver Surfer" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Fantastic Four: Rise of the Silver Surfer"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 15, 2007</td><td class="title">Fantastic Four: Rise of the Silver Surfer</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Cloud Galactus; First Steps does it properly.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="024" data-title="Iron Man" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Iron Man"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 2, 2008</td><td class="title">Iron Man</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">RDJ&#x27;s MCU start; gives his Doom casting its weight.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="025" data-title="The Incredible Hulk" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+, Hulu"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Incredible Hulk"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 13, 2008</td><td class="title">The Incredible Hulk</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Ross and Sterns setup for Brave New World.</td><td class="streaming"><span class="stream-tag">Disney+, Hulu</span></td></tr>
+    <tr data-id="026" data-title="Punisher: War Zone" data-status="N" data-tier="S" data-type="Film" data-streaming="Roku Channel, Plex"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Punisher: War Zone"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Dec 5, 2008</td><td class="title">Punisher: War Zone</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Cult favourite; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Roku Channel, Plex</span></td></tr>
+    <tr data-id="027" data-title="X-Men Origins: Wolverine" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men Origins: Wolverine"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 1, 2009</td><td class="title">X-Men Origins: Wolverine</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Taylor Kitsch&#x27;s Gambit, not Tatum&#x27;s; skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="028" data-title="Iron Man 2" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Iron Man 2"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 7, 2010</td><td class="title">Iron Man 2</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Minor; Fury and S.H.I.E.L.D. groundwork.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="029" data-title="Thor" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Thor"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 6, 2011</td><td class="title">Thor</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Thor and Loki origins; both in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="030" data-title="X-Men: First Class" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men: First Class"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 3, 2011</td><td class="title">X-Men: First Class</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Younger Xavier and Magneto; different cast from Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="031" data-title="Captain America: The First Avenger" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain America: The First Avenger"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 22, 2011</td><td class="title">Captain America: The First Avenger</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Steve, Peggy and Bucky: all three in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="032" data-title="Ghost Rider: Spirit of Vengeance" data-status="N" data-tier="S" data-type="Film" data-streaming="YouTube TV, YouTube"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ghost Rider: Spirit of Vengeance"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 17, 2012</td><td class="title">Ghost Rider: Spirit of Vengeance</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Skip.</td><td class="streaming"><span class="stream-tag">YouTube TV, YouTube</span></td></tr>
+    <tr data-id="033" data-title="The Avengers" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Avengers"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 4, 2012</td><td class="title">The Avengers</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">The team assembles; Loki&#x27;s villain turn.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="034" data-title="The Amazing Spider-Man" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Amazing Spider-Man"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 3, 2012</td><td class="title">The Amazing Spider-Man</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Garfield&#x27;s Spidey; payoff is No Way Home.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="035" data-title="Iron Man 3" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Iron Man 3"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 3, 2013</td><td class="title">Iron Man 3</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Trevor Slattery&#x27;s debut (he&#x27;s back in Wonder Man).</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="036" data-title="The Wolverine" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Wolverine"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 26, 2013</td><td class="title">The Wolverine</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Standalone Fox Wolverine.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="037" data-title="Hulk and the Agents of S.M.A.S.H. (2013–15)" data-status="N" data-tier="S" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Hulk and the Agents of S.M.A.S.H. (2013–15)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 11, 2013</td><td class="title">Hulk and the Agents of S.M.A.S.H. (2013–15)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Kids&#x27; cartoon; not canon.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="038" data-title="Agents of S.H.I.E.L.D. (2013–20)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Agents of S.H.I.E.L.D. (2013–20)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 24, 2013</td><td class="title">Agents of S.H.I.E.L.D. (2013–20)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Seven seasons; the films never reference it.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="039" data-title="Thor: The Dark World" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Thor: The Dark World"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 8, 2013</td><td class="title">Thor: The Dark World</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Weakest Thor; Loki beats echoed in Loki S1.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="040" data-title="Captain America: The Winter Soldier" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain America: The Winter Soldier"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 4, 2014</td><td class="title">Captain America: The Winter Soldier</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Bucky&#x27;s arc begins; Sam Wilson joins.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="041" data-title="The Amazing Spider-Man 2" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Amazing Spider-Man 2"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 2, 2014</td><td class="title">The Amazing Spider-Man 2</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Electro returns in No Way Home; otherwise skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="042" data-title="X-Men: Days of Future Past" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men: Days of Future Past"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 23, 2014</td><td class="title">X-Men: Days of Future Past</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Best bridge between the original Fox cast and timelines.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="043" data-title="Guardians of the Galaxy" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Guardians of the Galaxy"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 1, 2014</td><td class="title">Guardians of the Galaxy</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Guardians not confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="044" data-title="Agent Carter (2015–16)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Agent Carter (2015–16)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 6, 2015</td><td class="title">Agent Carter (2015–16)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Peggy&#x27;s solo show; Atwell is confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="045" data-title="Daredevil (Netflix, 2015–18)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Daredevil (Netflix, 2015–18)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 10, 2015</td><td class="title">Daredevil (Netflix, 2015–18)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Street-level gold standard; feeds Born Again, not Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="046" data-title="Avengers: Age of Ultron" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Avengers: Age of Ultron"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 1, 2015</td><td class="title">Avengers: Age of Ultron</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Ultron, Vision, Sokovia; Avengers-era stakes.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="047" data-title="Ant-Man" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ant-Man"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 17, 2015</td><td class="title">Ant-Man</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Scott and Cassie Lang, both in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="048" data-title="Fant4stic" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Fant4stic"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 7, 2015</td><td class="title">Fant4stic</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Notorious reboot; skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="049" data-title="Jessica Jones (2015–19)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Jessica Jones (2015–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 20, 2015</td><td class="title">Jessica Jones (2015–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Ritter&#x27;s Jessica returns in Born Again S2.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="050" data-title="Deadpool" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Deadpool"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 12, 2016</td><td class="title">Deadpool</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Context for Deadpool &amp; Wolverine&#x27;s jokes.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="051" data-title="Captain America: Civil War" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain America: Civil War"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 6, 2016</td><td class="title">Captain America: Civil War</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Steve/Bucky/Sam fracture; Black Panther and Spidey debut.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="052" data-title="X-Men: Apocalypse" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men: Apocalypse"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 27, 2016</td><td class="title">X-Men: Apocalypse</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">McAvoy-era; no Doomsday cast overlap.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="053" data-title="Luke Cage (2016–18)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Luke Cage (2016–18)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 30, 2016</td><td class="title">Luke Cage (2016–18)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Defenders build-up only.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="054" data-title="Doctor Strange" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Doctor Strange"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 4, 2016</td><td class="title">Doctor Strange</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Mystic arts groundwork; Strange not confirmed.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="055" data-title="Legion (2017–19)" data-status="N" data-tier="D" data-type="Series" data-streaming="Hulu, Tubi"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Legion (2017–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 8, 2017</td><td class="title">Legion (2017–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Xavier&#x27;s son in a Fox side-universe; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Hulu, Tubi</span></td></tr>
+    <tr data-id="056" data-title="Logan" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Logan"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 3, 2017</td><td class="title">Logan</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Great Fox send-off; a different &#x27;last&#x27; Xavier than Doomsday&#x27;s.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="057" data-title="Iron Fist (2017–18)" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Iron Fist (2017–18)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 17, 2017</td><td class="title">Iron Fist (2017–18)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Weakest Netflix show.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="058" data-title="Guardians of the Galaxy Vol. 2" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Guardians of the Galaxy Vol. 2"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 5, 2017</td><td class="title">Guardians of the Galaxy Vol. 2</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">No Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="059" data-title="Spider-Man: Homecoming" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: Homecoming"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 7, 2017</td><td class="title">Spider-Man: Homecoming</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Holland&#x27;s Peter; Spidey not confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="060" data-title="The Defenders" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Defenders"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 18, 2017</td><td class="title">The Defenders</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Netflix team-up; street level.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="061" data-title="Inhumans" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Inhumans"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 29, 2017</td><td class="title">Inhumans</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Widely panned; skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="062" data-title="The Gifted (2017–19)" data-status="N" data-tier="S" data-type="Series" data-streaming="Hulu"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Gifted (2017–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 2, 2017</td><td class="title">The Gifted (2017–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Fox mutant show; no film ties.</td><td class="streaming"><span class="stream-tag">Hulu</span></td></tr>
+    <tr data-id="063" data-title="Thor: Ragnarok" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Thor: Ragnarok"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 3, 2017</td><td class="title">Thor: Ragnarok</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Thor&#x27;s reset; leads straight into Infinity War.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="064" data-title="The Punisher (Netflix, 2017–19)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Punisher (Netflix, 2017–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 17, 2017</td><td class="title">The Punisher (Netflix, 2017–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Bernthal&#x27;s Frank, now in Born Again and Brand New Day.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="065" data-title="Runaways (Hulu, 2017–19)" data-status="N" data-tier="S" data-type="Series" data-streaming="Tubi"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Runaways (Hulu, 2017–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 21, 2017</td><td class="title">Runaways (Hulu, 2017–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Self-contained teen series.</td><td class="streaming"><span class="stream-tag">Tubi</span></td></tr>
+    <tr data-id="066" data-title="Black Panther" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Black Panther"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 16, 2018</td><td class="title">Black Panther</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Shuri, M&#x27;Baku and Wakanda, all in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="067" data-title="Avengers: Infinity War" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Avengers: Infinity War"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 27, 2018</td><td class="title">Avengers: Infinity War</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">The Snap; Russo-scale ensemble storytelling.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="068" data-title="Deadpool 2" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Deadpool 2"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 18, 2018</td><td class="title">Deadpool 2</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">More Deadpool &amp; Wolverine context.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="069" data-title="Cloak &amp; Dagger (2018–19)" data-status="N" data-tier="S" data-type="Series" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Cloak &amp; Dagger (2018–19)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 7, 2018</td><td class="title">Cloak &amp; Dagger (2018–19)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Freeform teen series; no ties.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="070" data-title="Ant-Man and the Wasp" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ant-Man and the Wasp"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 6, 2018</td><td class="title">Ant-Man and the Wasp</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Quantum Realm rules used in Endgame.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="071" data-title="Venom" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Venom"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 5, 2018</td><td class="title">Venom</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Separate Sony universe.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="072" data-title="Spider-Man: Into the Spider-Verse" data-status="N" data-tier="D" data-type="Animated film" data-streaming="Netflix"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: Into the Spider-Verse"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Dec 14, 2018</td><td class="title">Spider-Man: Into the Spider-Verse</td><td class="type-col">Animated film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Best animated multiverse primer; separate continuity.</td><td class="streaming"><span class="stream-tag">Netflix</span></td></tr>
+    <tr data-id="073" data-title="Captain Marvel" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain Marvel"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 8, 2019</td><td class="title">Captain Marvel</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Carol not confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="074" data-title="Avengers: Endgame" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Avengers: Endgame"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 26, 2019</td><td class="title">Avengers: Endgame</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Steve&#x27;s ending and the time heist; watch the 2026 Encore cut.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="075" data-title="Dark Phoenix" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Dark Phoenix"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 7, 2019</td><td class="title">Dark Phoenix</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Different Jean Grey from Brand New Day&#x27;s.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="076" data-title="Spider-Man: Far From Home" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: Far From Home"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 2, 2019</td><td class="title">Spider-Man: Far From Home</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Sets up the identity reveal; NWH covers it.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="077" data-title="The New Mutants" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The New Mutants"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 28, 2020</td><td class="title">The New Mutants</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Shelved Fox leftover.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="078" data-title="Helstrom" data-status="N" data-tier="S" data-type="Series" data-streaming="Hulu"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Helstrom"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 16, 2020</td><td class="title">Helstrom</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Cancelled after one season.</td><td class="streaming"><span class="stream-tag">Hulu</span></td></tr>
+    <tr data-id="079" data-title="WandaVision" data-status="N" data-tier="R" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="WandaVision"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 15, 2021</td><td class="title">WandaVision</td><td class="type-col">Series</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Wanda into Multiverse of Madness; Vision into VisionQuest.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="080" data-title="The Falcon and the Winter Soldier" data-status="N" data-tier="E" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Falcon and the Winter Soldier"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 19, 2021</td><td class="title">The Falcon and the Winter Soldier</td><td class="type-col">Series</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Sam takes the shield; Walker and Joaquin Torres debut.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="081" data-title="M.O.D.O.K. (Hulu)" data-status="N" data-tier="S" data-type="Animated series" data-streaming="Hulu"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="M.O.D.O.K. (Hulu)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 21, 2021</td><td class="title">M.O.D.O.K. (Hulu)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Hulu stop-motion comedy, one season; niche, no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Hulu</span></td></tr>
+    <tr data-id="082" data-title="Loki (2021–23)" data-status="N" data-tier="E" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Loki (2021–23)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 9, 2021</td><td class="title">Loki (2021–23)</td><td class="type-col">Series</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">TVA and He Who Remains break the multiverse open; S2 ends with Loki holding it together, where Endgame Encore picks up.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="083" data-title="Black Widow" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Black Widow"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 9, 2021</td><td class="title">Black Widow</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Yelena and Red Guardian origins.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="084" data-title="What If...? (2021–24)" data-status="N" data-tier="D" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="What If...? (2021–24)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 11, 2021</td><td class="title">What If...? (2021–24)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Three-season animated multiverse anthology; Watcher lore.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="085" data-title="Shang-Chi and the Legend of the Ten Rings" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Shang-Chi and the Legend of the Ten Rings"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 3, 2021</td><td class="title">Shang-Chi and the Legend of the Ten Rings</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Simu Liu&#x27;s Shang-Chi, confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="086" data-title="Venom: Let There Be Carnage" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Venom: Let There Be Carnage"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 1, 2021</td><td class="title">Venom: Let There Be Carnage</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Only the post-credits scene touches the MCU.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="087" data-title="Eternals" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Eternals"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 5, 2021</td><td class="title">Eternals</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">No follow-up; skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="088" data-title="Hit-Monkey (Hulu, 2021–24)" data-status="N" data-tier="S" data-type="Animated series" data-streaming="Hulu"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Hit-Monkey (Hulu, 2021–24)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 17, 2021</td><td class="title">Hit-Monkey (Hulu, 2021–24)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Hulu adult animated series, two seasons; niche, no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Hulu</span></td></tr>
+    <tr data-id="089" data-title="Hawkeye" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Hawkeye"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 24, 2021</td><td class="title">Hawkeye</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Kate Bishop and Kingpin; not in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="090" data-title="Spider-Man: No Way Home" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: No Way Home"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Dec 17, 2021</td><td class="title">Spider-Man: No Way Home</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Multiverse breach; sets up Brand New Day.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="091" data-title="Moon Knight" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Moon Knight"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 30, 2022</td><td class="title">Moon Knight</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Self-contained.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="092" data-title="Morbius" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+, Prime Video"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Morbius"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Apr 1, 2022</td><td class="title">Morbius</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Skip.</td><td class="streaming"><span class="stream-tag">Disney+, Prime Video</span></td></tr>
+    <tr data-id="093" data-title="Doctor Strange in the Multiverse of Madness" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Doctor Strange in the Multiverse of Madness"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 6, 2022</td><td class="title">Doctor Strange in the Multiverse of Madness</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Incursions explained; Stewart&#x27;s Xavier variant.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="094" data-title="Ms. Marvel" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ms. Marvel"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 8, 2022</td><td class="title">Ms. Marvel</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Kamala; ends on the MCU&#x27;s first mutant tease.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="095" data-title="Thor: Love and Thunder" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Thor: Love and Thunder"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 8, 2022</td><td class="title">Thor: Love and Thunder</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Thor&#x27;s last solo film before Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="096" data-title="I Am Groot (2022–23)" data-status="N" data-tier="S" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="I Am Groot (2022–23)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 10, 2022</td><td class="title">I Am Groot (2022–23)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Shorts; skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="097" data-title="She-Hulk: Attorney at Law" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="She-Hulk: Attorney at Law"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 18, 2022</td><td class="title">She-Hulk: Attorney at Law</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Comedy; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="098" data-title="Werewolf by Night" data-status="N" data-tier="S" data-type="Special" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Werewolf by Night"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 7, 2022</td><td class="title">Werewolf by Night</td><td class="type-col">Special</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Fun standalone special.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="099" data-title="Black Panther: Wakanda Forever" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Black Panther: Wakanda Forever"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 11, 2022</td><td class="title">Black Panther: Wakanda Forever</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Shuri becomes Black Panther; Namor and Namora debut.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="100" data-title="The Guardians of the Galaxy Holiday Special" data-status="N" data-tier="S" data-type="Special" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Guardians of the Galaxy Holiday Special"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 25, 2022</td><td class="title">The Guardians of the Galaxy Holiday Special</td><td class="type-col">Special</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Holiday fluff.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="101" data-title="Ant-Man and the Wasp: Quantumania" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ant-Man and the Wasp: Quantumania"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 17, 2023</td><td class="title">Ant-Man and the Wasp: Quantumania</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Cassie Lang and the multiversal stakes.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="102" data-title="Guardians of the Galaxy Vol. 3" data-status="N" data-tier="D" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Guardians of the Galaxy Vol. 3"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 5, 2023</td><td class="title">Guardians of the Galaxy Vol. 3</td><td class="type-col">Film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Great finale; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="103" data-title="Spider-Man: Across the Spider-Verse" data-status="N" data-tier="D" data-type="Animated film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: Across the Spider-Verse"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 2, 2023</td><td class="title">Spider-Man: Across the Spider-Verse</td><td class="type-col">Animated film</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Separate continuity; multiverse fun.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="104" data-title="Secret Invasion" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Secret Invasion"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 21, 2023</td><td class="title">Secret Invasion</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Skrull plot; not tied to Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="105" data-title="The Marvels" data-status="N" data-tier="R" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Marvels"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Nov 10, 2023</td><td class="title">The Marvels</td><td class="type-col">Film</td><td><span class="pill pill-tier">Recommended</span></td><td class="note">Post-credits brings Grammer&#x27;s Beast into the MCU.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="106" data-title="Echo" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Echo"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 9, 2024</td><td class="title">Echo</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Self-contained.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="107" data-title="Madame Web" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+, Max"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Madame Web"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 14, 2024</td><td class="title">Madame Web</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Skip.</td><td class="streaming"><span class="stream-tag">Disney+, Max</span></td></tr>
+    <tr data-id="108" data-title="X-Men &#x27;97 (2024–26)" data-status="N" data-tier="D" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="X-Men &#x27;97 (2024–26)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 20, 2024</td><td class="title">X-Men &#x27;97 (2024–26)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Acclaimed animated sequel; S2 is the Apocalypse arc; not live-action canon.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="109" data-title="Deadpool &amp; Wolverine" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Deadpool &amp; Wolverine"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 26, 2024</td><td class="title">Deadpool &amp; Wolverine</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Tatum&#x27;s Gambit, the TVA, the Void: the Fox-to-MCU bridge.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="110" data-title="Agatha All Along" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Agatha All Along"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 18, 2024</td><td class="title">Agatha All Along</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">WandaVision follow-up.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="111" data-title="Venom: The Last Dance" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+, Netflix"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Venom: The Last Dance"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 25, 2024</td><td class="title">Venom: The Last Dance</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Ends Sony&#x27;s Venom trilogy; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+, Netflix</span></td></tr>
+    <tr data-id="112" data-title="Kraven the Hunter" data-status="N" data-tier="S" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Kraven the Hunter"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Dec 13, 2024</td><td class="title">Kraven the Hunter</td><td class="type-col">Film</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Skip.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="113" data-title="Your Friendly Neighborhood Spider-Man (S1)" data-status="N" data-tier="S" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Your Friendly Neighborhood Spider-Man (S1)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 29, 2025</td><td class="title">Your Friendly Neighborhood Spider-Man (S1)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Alt-timeline Spidey; Season 2 set for Jan 13, 2027.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="114" data-title="Captain America: Brave New World" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Captain America: Brave New World"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Feb 14, 2025</td><td class="title">Captain America: Brave New World</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Sam Wilson&#x27;s first film as Captain America.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="115" data-title="Daredevil: Born Again (2025–26)" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Daredevil: Born Again (2025–26)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Mar 4, 2025</td><td class="title">Daredevil: Born Again (2025–26)</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Street-level; S2 brings back Kingpin and Jessica Jones; no confirmed Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="116" data-title="Thunderbolts*" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Thunderbolts*"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 2, 2025</td><td class="title">Thunderbolts*</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Yelena&#x27;s team becomes the New Avengers; Sentry debuts.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="117" data-title="Ironheart" data-status="N" data-tier="S" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Ironheart"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jun 24, 2025</td><td class="title">Ironheart</td><td class="type-col">Series</td><td><span class="pill pill-tier">Skippable</span></td><td class="note">Riri Williams; no Doomsday tie.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="118" data-title="The Fantastic Four: First Steps" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Fantastic Four: First Steps"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 25, 2025</td><td class="title">The Fantastic Four: First Steps</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Pascal, Kirby, Quinn, Moss-Bachrach, all in Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="119" data-title="Eyes of Wakanda" data-status="N" data-tier="D" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Eyes of Wakanda"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Aug 1, 2025</td><td class="title">Eyes of Wakanda</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Wakandan history anthology.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="120" data-title="Marvel Zombies (Season 1)" data-status="N" data-tier="D" data-type="Animated series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Marvel Zombies (Season 1)"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 24, 2025</td><td class="title">Marvel Zombies (Season 1)</td><td class="type-col">Animated series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Fun, gory alt-world; not Doomsday canon.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="121" data-title="Wonder Man" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Wonder Man"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jan 27, 2026</td><td class="title">Wonder Man</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Trevor Slattery returns; no confirmed Doomsday tie; no Season 2.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="122" data-title="The Punisher: One Last Kill" data-status="N" data-tier="D" data-type="Special" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="The Punisher: One Last Kill"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">May 12, 2026</td><td class="title">The Punisher: One Last Kill</td><td class="type-col">Special</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Bernthal special ahead of Brand New Day.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="123" data-title="Spider-Man: Brand New Day" data-status="N" data-tier="E" data-type="Film" data-streaming="Not streaming"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Spider-Man: Brand New Day"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Jul 31, 2026</td><td class="title">Spider-Man: Brand New Day</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Last MCU film before Doomsday; Banner and Jean Grey threads.</td><td class="streaming"><span class="stream-tag stream-tag-none">Not streaming</span></td></tr>
+    <tr data-id="124" data-title="Avengers Endgame: Encore" data-status="N" data-tier="E" data-type="Film" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="Avengers Endgame: Encore"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Sep 25, 2026</td><td class="title">Avengers Endgame: Encore</td><td class="type-col">Film</td><td><span class="pill pill-tier pill-tier-E">Essential</span></td><td class="note">Re-release with 4 new Doomsday scenes; on Disney+ since Nov 13.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+    <tr data-id="125" data-title="VisionQuest" data-status="N" data-tier="D" data-type="Series" data-streaming="Disney+"><td class="status-cell"><span class="status-wrap"><span class="status-select-wrap pill pill-N"><select class="status-select" aria-label="VisionQuest"><option value="W">Watched</option><option value="N" selected>Not watched</option><option value="P">Partial</option><option value="X">Excluded</option><option value="R">Review summary</option></select></span><span class="print-status pill pill-N">Not watched</span><span class="edited-mark" hidden title="Differs from the default status">Edited</span></span></td><td class="released">Oct 13, 2026</td><td class="title">VisionQuest</td><td class="type-col">Series</td><td><span class="pill pill-tier">Deep cut</span></td><td class="note">Vision&#x27;s story; Vision isn&#x27;t confirmed for Doomsday.</td><td class="streaming"><span class="stream-tag">Disney+</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="empty" id="empty-filter">No titles match these filters.</p>
+        <p class="table-note">This is a blank starting checklist: every title begins as Not watched. Choose a status from the dropdown to change it. Changes are saved only in this browser on this device. An “Edited” mark appears on titles that differ from the accepted baseline, or from Not watched if you have not set a baseline. Update baseline accepts the current statuses as that comparison point; it does not rewrite the file.</p>
+      </section>
+
+      
+
+      <section class="block" aria-labelledby="minimum-heading">
+        <h2 id="minimum-heading">Minimum viable watch</h2>
+        <ol class="essentials">
+          <li>X-Men (2000)</li>
+          <li>X2: X-Men United (2003)</li>
+          <li>Captain America: The First Avenger (2011)</li>
+          <li>The Avengers (2012)</li>
+          <li>Avengers: Infinity War (2018)</li>
+          <li>Avengers: Endgame (2019)</li>
+          <li>The Falcon and the Winter Soldier (2021)</li>
+          <li>Loki (2021–23)</li>
+          <li>Spider-Man: No Way Home (2021)</li>
+          <li>Doctor Strange in the Multiverse of Madness (2022)</li>
+          <li>Black Panther: Wakanda Forever (2022)</li>
+          <li>Deadpool &amp; Wolverine (2024)</li>
+          <li>Captain America: Brave New World (2025)</li>
+          <li>Thunderbolts* (2025)</li>
+          <li>The Fantastic Four: First Steps (2025)</li>
+          <li>Spider-Man: Brand New Day (2026)</li>
+          <li>Avengers Endgame: Encore (2026)</li>
+        </ol>
+        <div class="callout">
+          <p class="lead">Short on time?</p>
+          <p>If you only have a weekend, prioritize Endgame: Encore, Loki S1–2, Multiverse of Madness, Deadpool &amp; Wolverine, Thunderbolts*, First Steps and Brand New Day.</p>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Notes and exclusions</h2>
+        <ul class="notes">
+          <li>Dates are first US release (streaming premiere for series); multi-season shows are grouped under their first season&#x27;s date.</li>
+<li>Endgame: Encore opened Sep 25, 2026 (some outlets list Sep 24 previews); its new scenes sit at the very end and in the credits.</li>
+<li>Not listed: pre-1992 and kids&#x27; TV (1977 Incredible Hulk, 1967/1994 Spider-Man cartoons, Spidey and His Amazing Friends, Moon Girl and Devil Dinosaur), TV pilots (Nick Fury) and Marvel One-Shots. None matter for Doomsday.</li>
+<li>Coming after Doomsday: Your Friendly Neighborhood Spider-Man S2 (Jan 13, 2027), Marvel Zombies specials (2027), Daredevil: Born Again S3 (2027).</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>This is a blank starting checklist; every title starts as Not watched. Statuses you set here are saved only in this browser on this device.</p>
+      <p>Streaming info is US availability as checked Nov 2026 and can change.</p>
+    </footer>
+
+    <div id="import-dialog" class="import-dialog no-print" hidden role="dialog" aria-modal="true" aria-labelledby="import-dialog-title">
+      <div class="import-dialog-backdrop" tabindex="-1"></div>
+      <div class="import-dialog-panel" role="document">
+        <h2 id="import-dialog-title">Import progress</h2>
+        <div id="import-dialog-body"></div>
+        <div class="import-dialog-actions">
+          <button type="button" class="action-btn" id="import-dialog-dismiss">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="application/json" id="default-status-data">{"version":"fd98edf7","entries":[{"id":"001","title":"Howard the Duck","status":"N","streaming":"Not streaming"},{"id":"002","title":"The Punisher (Dolph Lundgren)","status":"N","streaming":"Not streaming"},{"id":"003","title":"Captain America (1990)","status":"N","streaming":"Not streaming"},{"id":"004","title":"X-Men: The Animated Series (1992–97)","status":"N","streaming":"Disney+"},{"id":"005","title":"The Fantastic Four (Corman)","status":"N","streaming":"Not streaming"},{"id":"006","title":"Generation X","status":"N","streaming":"Not streaming"},{"id":"007","title":"Blade","status":"N","streaming":"Peacock"},{"id":"008","title":"X-Men","status":"N","streaming":"Disney+"},{"id":"009","title":"Blade II","status":"N","streaming":"Peacock"},{"id":"010","title":"Spider-Man (Raimi)","status":"N","streaming":"Disney+"},{"id":"011","title":"Daredevil (Affleck)","status":"N","streaming":"Disney+"},{"id":"012","title":"X2: X-Men United","status":"N","streaming":"Disney+"},{"id":"013","title":"Hulk (Ang Lee)","status":"N","streaming":"YouTube"},{"id":"014","title":"The Punisher (Thomas Jane)","status":"N","streaming":"Not streaming"},{"id":"015","title":"Spider-Man 2","status":"N","streaming":"Disney+"},{"id":"016","title":"Blade: Trinity","status":"N","streaming":"Peacock"},{"id":"017","title":"Elektra","status":"N","streaming":"Disney+"},{"id":"018","title":"Man-Thing","status":"N","streaming":"Tubi"},{"id":"019","title":"Fantastic Four (2005)","status":"N","streaming":"Disney+"},{"id":"020","title":"X-Men: The Last Stand","status":"N","streaming":"Disney+"},{"id":"021","title":"Ghost Rider","status":"N","streaming":"Starz, YouTube TV"},{"id":"022","title":"Spider-Man 3","status":"N","streaming":"Disney+"},{"id":"023","title":"Fantastic Four: Rise of the Silver Surfer","status":"N","streaming":"Disney+"},{"id":"024","title":"Iron Man","status":"N","streaming":"Disney+"},{"id":"025","title":"The Incredible Hulk","status":"N","streaming":"Disney+, Hulu"},{"id":"026","title":"Punisher: War Zone","status":"N","streaming":"Roku Channel, Plex"},{"id":"027","title":"X-Men Origins: Wolverine","status":"N","streaming":"Disney+"},{"id":"028","title":"Iron Man 2","status":"N","streaming":"Disney+"},{"id":"029","title":"Thor","status":"N","streaming":"Disney+"},{"id":"030","title":"X-Men: First Class","status":"N","streaming":"Disney+"},{"id":"031","title":"Captain America: The First Avenger","status":"N","streaming":"Disney+"},{"id":"032","title":"Ghost Rider: Spirit of Vengeance","status":"N","streaming":"YouTube TV, YouTube"},{"id":"033","title":"The Avengers","status":"N","streaming":"Disney+"},{"id":"034","title":"The Amazing Spider-Man","status":"N","streaming":"Disney+"},{"id":"035","title":"Iron Man 3","status":"N","streaming":"Disney+"},{"id":"036","title":"The Wolverine","status":"N","streaming":"Disney+"},{"id":"037","title":"Hulk and the Agents of S.M.A.S.H. (2013–15)","status":"N","streaming":"Disney+"},{"id":"038","title":"Agents of S.H.I.E.L.D. (2013–20)","status":"N","streaming":"Disney+"},{"id":"039","title":"Thor: The Dark World","status":"N","streaming":"Disney+"},{"id":"040","title":"Captain America: The Winter Soldier","status":"N","streaming":"Disney+"},{"id":"041","title":"The Amazing Spider-Man 2","status":"N","streaming":"Disney+"},{"id":"042","title":"X-Men: Days of Future Past","status":"N","streaming":"Disney+"},{"id":"043","title":"Guardians of the Galaxy","status":"N","streaming":"Disney+"},{"id":"044","title":"Agent Carter (2015–16)","status":"N","streaming":"Disney+"},{"id":"045","title":"Daredevil (Netflix, 2015–18)","status":"N","streaming":"Disney+"},{"id":"046","title":"Avengers: Age of Ultron","status":"N","streaming":"Disney+"},{"id":"047","title":"Ant-Man","status":"N","streaming":"Disney+"},{"id":"048","title":"Fant4stic","status":"N","streaming":"Disney+"},{"id":"049","title":"Jessica Jones (2015–19)","status":"N","streaming":"Disney+"},{"id":"050","title":"Deadpool","status":"N","streaming":"Disney+"},{"id":"051","title":"Captain America: Civil War","status":"N","streaming":"Disney+"},{"id":"052","title":"X-Men: Apocalypse","status":"N","streaming":"Disney+"},{"id":"053","title":"Luke Cage (2016–18)","status":"N","streaming":"Disney+"},{"id":"054","title":"Doctor Strange","status":"N","streaming":"Disney+"},{"id":"055","title":"Legion (2017–19)","status":"N","streaming":"Hulu, Tubi"},{"id":"056","title":"Logan","status":"N","streaming":"Disney+"},{"id":"057","title":"Iron Fist (2017–18)","status":"N","streaming":"Disney+"},{"id":"058","title":"Guardians of the Galaxy Vol. 2","status":"N","streaming":"Disney+"},{"id":"059","title":"Spider-Man: Homecoming","status":"N","streaming":"Disney+"},{"id":"060","title":"The Defenders","status":"N","streaming":"Disney+"},{"id":"061","title":"Inhumans","status":"N","streaming":"Disney+"},{"id":"062","title":"The Gifted (2017–19)","status":"N","streaming":"Hulu"},{"id":"063","title":"Thor: Ragnarok","status":"N","streaming":"Disney+"},{"id":"064","title":"The Punisher (Netflix, 2017–19)","status":"N","streaming":"Disney+"},{"id":"065","title":"Runaways (Hulu, 2017–19)","status":"N","streaming":"Tubi"},{"id":"066","title":"Black Panther","status":"N","streaming":"Disney+"},{"id":"067","title":"Avengers: Infinity War","status":"N","streaming":"Disney+"},{"id":"068","title":"Deadpool 2","status":"N","streaming":"Disney+"},{"id":"069","title":"Cloak & Dagger (2018–19)","status":"N","streaming":"Not streaming"},{"id":"070","title":"Ant-Man and the Wasp","status":"N","streaming":"Disney+"},{"id":"071","title":"Venom","status":"N","streaming":"Disney+"},{"id":"072","title":"Spider-Man: Into the Spider-Verse","status":"N","streaming":"Netflix"},{"id":"073","title":"Captain Marvel","status":"N","streaming":"Disney+"},{"id":"074","title":"Avengers: Endgame","status":"N","streaming":"Disney+"},{"id":"075","title":"Dark Phoenix","status":"N","streaming":"Disney+"},{"id":"076","title":"Spider-Man: Far From Home","status":"N","streaming":"Disney+"},{"id":"077","title":"The New Mutants","status":"N","streaming":"Disney+"},{"id":"078","title":"Helstrom","status":"N","streaming":"Hulu"},{"id":"079","title":"WandaVision","status":"N","streaming":"Disney+"},{"id":"080","title":"The Falcon and the Winter Soldier","status":"N","streaming":"Disney+"},{"id":"081","title":"M.O.D.O.K. (Hulu)","status":"N","streaming":"Hulu"},{"id":"082","title":"Loki (2021–23)","status":"N","streaming":"Disney+"},{"id":"083","title":"Black Widow","status":"N","streaming":"Disney+"},{"id":"084","title":"What If...? (2021–24)","status":"N","streaming":"Disney+"},{"id":"085","title":"Shang-Chi and the Legend of the Ten Rings","status":"N","streaming":"Disney+"},{"id":"086","title":"Venom: Let There Be Carnage","status":"N","streaming":"Disney+"},{"id":"087","title":"Eternals","status":"N","streaming":"Disney+"},{"id":"088","title":"Hit-Monkey (Hulu, 2021–24)","status":"N","streaming":"Hulu"},{"id":"089","title":"Hawkeye","status":"N","streaming":"Disney+"},{"id":"090","title":"Spider-Man: No Way Home","status":"N","streaming":"Disney+"},{"id":"091","title":"Moon Knight","status":"N","streaming":"Disney+"},{"id":"092","title":"Morbius","status":"N","streaming":"Disney+, Prime Video"},{"id":"093","title":"Doctor Strange in the Multiverse of Madness","status":"N","streaming":"Disney+"},{"id":"094","title":"Ms. Marvel","status":"N","streaming":"Disney+"},{"id":"095","title":"Thor: Love and Thunder","status":"N","streaming":"Disney+"},{"id":"096","title":"I Am Groot (2022–23)","status":"N","streaming":"Disney+"},{"id":"097","title":"She-Hulk: Attorney at Law","status":"N","streaming":"Disney+"},{"id":"098","title":"Werewolf by Night","status":"N","streaming":"Disney+"},{"id":"099","title":"Black Panther: Wakanda Forever","status":"N","streaming":"Disney+"},{"id":"100","title":"The Guardians of the Galaxy Holiday Special","status":"N","streaming":"Disney+"},{"id":"101","title":"Ant-Man and the Wasp: Quantumania","status":"N","streaming":"Disney+"},{"id":"102","title":"Guardians of the Galaxy Vol. 3","status":"N","streaming":"Disney+"},{"id":"103","title":"Spider-Man: Across the Spider-Verse","status":"N","streaming":"Disney+"},{"id":"104","title":"Secret Invasion","status":"N","streaming":"Disney+"},{"id":"105","title":"The Marvels","status":"N","streaming":"Disney+"},{"id":"106","title":"Echo","status":"N","streaming":"Disney+"},{"id":"107","title":"Madame Web","status":"N","streaming":"Disney+, Max"},{"id":"108","title":"X-Men '97 (2024–26)","status":"N","streaming":"Disney+"},{"id":"109","title":"Deadpool & Wolverine","status":"N","streaming":"Disney+"},{"id":"110","title":"Agatha All Along","status":"N","streaming":"Disney+"},{"id":"111","title":"Venom: The Last Dance","status":"N","streaming":"Disney+, Netflix"},{"id":"112","title":"Kraven the Hunter","status":"N","streaming":"Disney+"},{"id":"113","title":"Your Friendly Neighborhood Spider-Man (S1)","status":"N","streaming":"Disney+"},{"id":"114","title":"Captain America: Brave New World","status":"N","streaming":"Disney+"},{"id":"115","title":"Daredevil: Born Again (2025–26)","status":"N","streaming":"Disney+"},{"id":"116","title":"Thunderbolts*","status":"N","streaming":"Disney+"},{"id":"117","title":"Ironheart","status":"N","streaming":"Disney+"},{"id":"118","title":"The Fantastic Four: First Steps","status":"N","streaming":"Disney+"},{"id":"119","title":"Eyes of Wakanda","status":"N","streaming":"Disney+"},{"id":"120","title":"Marvel Zombies (Season 1)","status":"N","streaming":"Disney+"},{"id":"121","title":"Wonder Man","status":"N","streaming":"Disney+"},{"id":"122","title":"The Punisher: One Last Kill","status":"N","streaming":"Disney+"},{"id":"123","title":"Spider-Man: Brand New Day","status":"N","streaming":"Not streaming"},{"id":"124","title":"Avengers Endgame: Encore","status":"N","streaming":"Disney+"},{"id":"125","title":"VisionQuest","status":"N","streaming":"Disney+"}]}</script>
+  <script>
+(function () {
+  var STORAGE_KEY = "doomsday-checklist-v1";
+  var WATCH_LABEL = {
+    W: "Watched",
+    N: "Not watched",
+    P: "Partial",
+    X: "Excluded",
+    R: "Review summary"
+  };
+  var TAB_LABEL = {
+    all: "All",
+    E: "Essential",
+    R: "Recommended",
+    D: "Deep cut",
+    S: "Skippable",
+    sW: "Watched",
+    sN: "Not watched",
+    sP: "Partial",
+    sX: "Excluded",
+    sR: "Review summary"
+  };
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  // Fuzzy title match: Dice coefficient on character bigrams of a normalized title.
+  // A score of FUZZY_THRESHOLD or higher auto-applies; lower scores are flagged for review.
+  // A matching release year adds a small boost (YEAR_BOOST) before the threshold check
+  // and is used as a tiebreaker when scores are equal.
+  var FUZZY_THRESHOLD = 0.85;
+  var YEAR_BOOST = 0.05;
+
+  // Entry IDs (001, 002, …) are permanent. Never reuse or renumber an ID.
+  // New entries get the next unused number appended at the end.
+  //
+  // Export Progress JSON shape:
+  // {
+  //   format: "doomsday-checklist-progress",
+  //   formatVersion: 1,
+  //   exportedAt: <ISO 8601 timestamp>,
+  //   checklistVersion: <defaults hash>,
+  //   defaultsVersion: <same defaults hash>,
+  //   entries: [{ id, title, year, status }, ...]
+  // }
+  // Each entry has exactly those four fields. year is the release year as a number.
+  // status is the human label (Watched, Not watched, Partial, Excluded, Review summary).
+  // Import also accepts status codes W, N, P, X, and R.
+
+  var defaultsBlock = JSON.parse(document.getElementById("default-status-data").textContent);
+  var DEFAULTS_VERSION = defaultsBlock.version;
+  var DEFAULT_STATUS = {};
+  var DEFAULT_BY_ID = {};
+  var TITLE_TO_ID = {};
+  var ENTRY_IDS = [];
+
+  (function loadDefaults() {
+    var list = defaultsBlock.entries;
+    var i;
+    if (Array.isArray(list)) {
+      for (i = 0; i < list.length; i++) {
+        var e = list[i];
+        if (!e || !e.id || !e.title) continue;
+        var id = String(e.id);
+        var title = e.title;
+        var st = e.status;
+        if (!isStatusCode(st)) st = "N";
+        DEFAULT_BY_ID[id] = { title: title, status: st };
+        DEFAULT_STATUS[title] = st;
+        TITLE_TO_ID[title] = id;
+        ENTRY_IDS.push(id);
+      }
+    }
+  })();
+
+  var tabButtons = Array.from(document.querySelectorAll("[data-tab]"));
+  var typeSelect = document.getElementById("type-filter");
+  var hideToggle = document.getElementById("hide-watched");
+  var rows = Array.from(document.querySelectorAll("#checklist-body tr"));
+  var viewLine = document.getElementById("view-line");
+  var empty = document.getElementById("empty-filter");
+  var printHeader = document.getElementById("print-header");
+  var resetBtn = document.getElementById("reset-defaults");
+  var updateBtn = document.getElementById("update-baseline");
+  var downloadBtn = document.getElementById("download-updated");
+  var printBtn = document.getElementById("print-checklist");
+  var exportToggle = document.getElementById("export-toggle");
+  var exportMenu = document.getElementById("export-menu");
+  var exportWrap = document.getElementById("export-menu-wrap");
+  var exportProgressBtn = document.getElementById("export-progress");
+  var importBtn = document.getElementById("import-progress");
+  var importFile = document.getElementById("import-file");
+  var importDialog = document.getElementById("import-dialog");
+  var importDialogTitle = document.getElementById("import-dialog-title");
+  var importDialogBody = document.getElementById("import-dialog-body");
+  var importDialogDismiss = document.getElementById("import-dialog-dismiss");
+  var tab = "all";
+  var acceptedBaseline = null;
+  var lastFocus = null;
+  var rowsById = {};
+  rows.forEach(function (row) {
+    rowsById[rowId(row)] = row;
+  });
+
+  function isStatusCode(value) {
+    return Object.prototype.hasOwnProperty.call(WATCH_LABEL, value);
+  }
+  var isStatus = isStatusCode;
+
+  // FNV-1a 32-bit over UTF-16 code units of a canonical title/status list.
+  // A baked file writes a new version; load ignores overrides saved under a different version
+  // so stale localStorage from an older default set cannot override the baked defaults.
+  function hashDefaults(status) {
+    var keys = Object.keys(status).sort();
+    var canon = keys.map(function (k) { return k + "\t" + status[k]; }).join("\n");
+    var h = 2166136261;
+    var i;
+    for (i = 0; i < canon.length; i++) {
+      h ^= canon.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0).toString(16).padStart(8, "0");
+  }
+
+  function rowId(row) {
+    return row.getAttribute("data-id");
+  }
+
+  function rowTitle(row) {
+    return row.getAttribute("data-title");
+  }
+
+  function yearOf(row) {
+    var released = row.querySelector(".released");
+    var text = ((released && released.textContent) || "") + " " + (rowTitle(row) || "");
+    var m = text.match(/(?:19|20)\d{2}/);
+    return m ? parseInt(m[0], 10) : null;
+  }
+
+  function defaultStatusForId(id) {
+    return (DEFAULT_BY_ID[id] && DEFAULT_BY_ID[id].status) || "N";
+  }
+
+  function normalizeId(value) {
+    if (value == null || value === "") return null;
+    if (typeof value === "number" && isFinite(value)) {
+      return String(Math.trunc(value)).padStart(3, "0");
+    }
+    var s = String(value).trim();
+    if (/^\d+$/.test(s)) return s.padStart(3, "0");
+    return s;
+  }
+
+  function resolveToId(key) {
+    if (key == null || key === "") return null;
+    var padded = normalizeId(key);
+    if (Object.prototype.hasOwnProperty.call(DEFAULT_BY_ID, key)) return key;
+    if (padded && Object.prototype.hasOwnProperty.call(DEFAULT_BY_ID, padded)) return padded;
+    if (Object.prototype.hasOwnProperty.call(TITLE_TO_ID, key)) return TITLE_TO_ID[key];
+    return null;
+  }
+
+  function parseStatus(value) {
+    if (isStatusCode(value)) return value;
+    if (typeof value !== "string") return null;
+    var t = value.trim();
+    if (isStatusCode(t)) return t;
+    var lower = t.toLowerCase();
+    var labels = {
+      watched: "W",
+      "not watched": "N",
+      partial: "P",
+      excluded: "X",
+      "review summary": "R"
+    };
+    return labels[lower] || null;
+  }
+
+  function parseYear(value) {
+    if (typeof value === "number" && isFinite(value)) return Math.trunc(value);
+    if (typeof value === "string") {
+      var m = value.match(/(?:19|20)\d{2}/);
+      if (m) return parseInt(m[0], 10);
+    }
+    return null;
+  }
+
+  function cleanOverrides(src) {
+    var clean = {};
+    if (!src || typeof src !== "object") return clean;
+    Object.keys(src).forEach(function (key) {
+      var id = resolveToId(key);
+      var st = src[key];
+      if (!id || !isStatus(st)) return;
+      if (st !== defaultStatusForId(id)) clean[id] = st;
+    });
+    return clean;
+  }
+
+  function cleanBaseline(src) {
+    if (!src || typeof src !== "object") return null;
+    var migrated = {};
+    var found = false;
+    Object.keys(src).forEach(function (key) {
+      var id = resolveToId(key);
+      if (id && isStatus(src[key])) migrated[id] = src[key];
+    });
+    var map = {};
+    ENTRY_IDS.forEach(function (id) {
+      if (isStatus(migrated[id])) {
+        map[id] = migrated[id];
+        found = true;
+      } else {
+        map[id] = defaultStatusForId(id);
+      }
+    });
+    return found ? map : null;
+  }
+
+  function readStorage() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return { overrides: {}, baseline: null };
+      var parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return { overrides: {}, baseline: null };
+      if (parsed.defaultsVersion !== DEFAULTS_VERSION) return { overrides: {}, baseline: null };
+      return {
+        overrides: cleanOverrides(parsed.overrides),
+        baseline: Object.prototype.hasOwnProperty.call(parsed, "baseline")
+          ? cleanBaseline(parsed.baseline)
+          : null
+      };
+    } catch (err) {
+      return { overrides: {}, baseline: null };
+    }
+  }
+
+  function writeStorage(overrides, baseline) {
+    var clean = cleanOverrides(overrides);
+    try {
+      if (Object.keys(clean).length === 0 && !baseline) {
+        localStorage.removeItem(STORAGE_KEY);
+      } else {
+        var payload = {
+          defaultsVersion: DEFAULTS_VERSION,
+          overrides: clean
+        };
+        if (baseline) payload.baseline = baseline;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      }
+    } catch (err) {
+      /* private mode or blocked storage: keep the on-page change anyway */
+    }
+  }
+
+  function collectOverrides() {
+    var overrides = {};
+    rows.forEach(function (r) {
+      var id = rowId(r);
+      var s = statusOf(r);
+      if (s !== defaultStatusForId(id)) overrides[id] = s;
+    });
+    return overrides;
+  }
+
+  function persistState() {
+    writeStorage(collectOverrides(), acceptedBaseline);
+  }
+
+  function baselineStatus(id) {
+    if (acceptedBaseline && isStatus(acceptedBaseline[id])) {
+      return acceptedBaseline[id];
+    }
+    return defaultStatusForId(id);
+  }
+
+  function currentStatusMap() {
+    var map = {};
+    rows.forEach(function (row) {
+      map[rowId(row)] = statusOf(row);
+    });
+    return map;
+  }
+
+  function refreshEditedMarks() {
+    rows.forEach(function (row) {
+      var mark = row.querySelector(".edited-mark");
+      if (!mark) return;
+      if (statusOf(row) !== baselineStatus(rowId(row))) mark.removeAttribute("hidden");
+      else mark.setAttribute("hidden", "");
+    });
+  }
+
+  function statusOf(row) {
+    return row.getAttribute("data-status");
+  }
+
+  function setSelectValue(sel, st) {
+    sel.value = st;
+    Array.from(sel.options).forEach(function (opt) {
+      if (opt.value === st) opt.setAttribute("selected", "selected");
+      else opt.removeAttribute("selected");
+    });
+  }
+
+  function setRowStatus(row, st, persistAll) {
+    var id = rowId(row);
+    var edited = st !== baselineStatus(id);
+    row.setAttribute("data-status", st);
+    var sel = row.querySelector("select.status-select");
+    if (sel) setSelectValue(sel, st);
+    var wrap = row.querySelector(".status-select-wrap");
+    if (wrap) wrap.className = "status-select-wrap pill pill-" + st;
+    var printEl = row.querySelector(".print-status");
+    if (printEl) {
+      printEl.className = "print-status pill pill-" + st;
+      printEl.textContent = WATCH_LABEL[st];
+    }
+    var mark = row.querySelector(".edited-mark");
+    if (mark) {
+      if (edited) mark.removeAttribute("hidden");
+      else mark.setAttribute("hidden", "");
+    }
+    if (persistAll) persistState();
+  }
+
+  function matchTab(row) {
+    if (tab === "all") return true;
+    if (tab.length === 2 && tab.charAt(0) === "s") {
+      return statusOf(row) === tab.charAt(1);
+    }
+    return row.getAttribute("data-tier") === tab;
+  }
+
+  function formatPrintDate(d) {
+    return MONTHS[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  }
+
+  function updatePrintHeader() {
+    if (!printHeader) return;
+    var parts = ["Filter: " + (TAB_LABEL[tab] || tab)];
+    if (typeSelect.value !== "All types") parts.push("Type: " + typeSelect.value);
+    if (hideToggle.checked) parts.push("Hide watched");
+    parts.push("Printed " + formatPrintDate(new Date()));
+    printHeader.textContent = parts.join(" · ");
+  }
+
+  function apply() {
+    var typ = typeSelect.value;
+    var hideSeen = hideToggle.checked;
+    var inScope = 0;
+    var seenInScope = 0;
+    var visible = 0;
+    var essentialSeen = 0;
+    var essentialTotal = 0;
+    var counts = { W: 0, N: 0, P: 0, X: 0, R: 0 };
+
+    rows.forEach(function (row) {
+      var st = statusOf(row);
+      counts[st] += 1;
+      if (row.getAttribute("data-tier") === "E") {
+        essentialTotal += 1;
+        if (st === "W") essentialSeen += 1;
+      }
+      var okTab = matchTab(row);
+      var okType = typ === "All types" || row.getAttribute("data-type") === typ;
+      var inThis = okTab && okType;
+      if (inThis) {
+        inScope += 1;
+        if (st === "W") seenInScope += 1;
+      }
+      var show = inThis && !(hideSeen && st === "W");
+      row.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    tabButtons.forEach(function (btn) {
+      var t = btn.getAttribute("data-tab");
+      btn.setAttribute("aria-pressed", t === tab ? "true" : "false");
+      if (t.length === 2 && t.charAt(0) === "s") {
+        var span = btn.querySelector(".count");
+        if (span) span.textContent = String(counts[t.charAt(1)]);
+      }
+    });
+
+    viewLine.textContent =
+      "Watched: " + seenInScope + " of " + inScope + " in this view · Essentials: " +
+      essentialSeen + " of " + essentialTotal;
+
+    empty.classList.toggle("visible", visible === 0);
+    updatePrintHeader();
+  }
+
+  function resetToDefaults() {
+    if (!window.confirm("Reset all entries to Not watched and clear the saved baseline?")) {
+      return;
+    }
+    acceptedBaseline = null;
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (err) { /* ignore */ }
+    rows.forEach(function (row) {
+      setRowStatus(row, "N", false);
+    });
+    apply();
+  }
+
+  function updateBaseline() {
+    acceptedBaseline = currentStatusMap();
+    persistState();
+    refreshEditedMarks();
+  }
+
+  function resetTransientUi(root) {
+    var scope = root || document;
+    var menu = scope.querySelector("#export-menu");
+    var toggle = scope.querySelector("#export-toggle");
+    if (menu) menu.setAttribute("hidden", "");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+    var dialog = scope.querySelector("#import-dialog");
+    if (dialog) {
+      dialog.setAttribute("hidden", "");
+      var body = scope.querySelector("#import-dialog-body");
+      if (body) body.innerHTML = "";
+      var title = scope.querySelector("#import-dialog-title");
+      if (title) title.textContent = "Import progress";
+    }
+    var file = scope.querySelector("#import-file");
+    if (file) file.value = "";
+  }
+
+  function bakeHtml() {
+    var merged = {};
+    var bakedEntries = [];
+    rows.forEach(function (row) {
+      var id = rowId(row);
+      var title = rowTitle(row);
+      var st = statusOf(row);
+      merged[title] = st;
+      bakedEntries.push({ id: id, title: title, status: st, streaming: row.getAttribute("data-streaming") || "" });
+    });
+    var version = hashDefaults(merged);
+    var clone = document.documentElement.cloneNode(true);
+    resetTransientUi(clone);
+    var dataEl = clone.querySelector("#default-status-data");
+    dataEl.textContent = JSON.stringify({ version: version, entries: bakedEntries });
+
+    var counts = { W: 0, N: 0, P: 0, X: 0, R: 0 };
+    var essentialSeen = 0;
+    var essentialTotal = 0;
+
+    Array.from(clone.querySelectorAll("#checklist-body tr")).forEach(function (row) {
+      row.removeAttribute("hidden");
+      var st = merged[row.getAttribute("data-title")];
+      row.setAttribute("data-status", st);
+      var sel = row.querySelector("select.status-select");
+      if (sel) {
+        sel.value = st;
+        Array.from(sel.options).forEach(function (opt) {
+          if (opt.value === st) opt.setAttribute("selected", "selected");
+          else opt.removeAttribute("selected");
+        });
+      }
+      var wrap = row.querySelector(".status-select-wrap");
+      if (wrap) wrap.className = "status-select-wrap pill pill-" + st;
+      var printEl = row.querySelector(".print-status");
+      if (printEl) {
+        printEl.className = "print-status pill pill-" + st;
+        printEl.textContent = WATCH_LABEL[st];
+      }
+      var mark = row.querySelector(".edited-mark");
+      if (mark) mark.setAttribute("hidden", "");
+      counts[st] += 1;
+      if (row.getAttribute("data-tier") === "E") {
+        essentialTotal += 1;
+        if (st === "W") essentialSeen += 1;
+      }
+    });
+
+    Array.from(clone.querySelectorAll("[data-tab]")).forEach(function (btn) {
+      var t = btn.getAttribute("data-tab");
+      btn.setAttribute("aria-pressed", t === "all" ? "true" : "false");
+      if (t.length === 2 && t.charAt(0) === "s") {
+        var span = btn.querySelector(".count");
+        if (span) span.textContent = String(counts[t.charAt(1)]);
+      }
+    });
+
+    var typeSel = clone.querySelector("#type-filter");
+    if (typeSel) {
+      typeSel.value = "All types";
+      Array.from(typeSel.options).forEach(function (opt) {
+        if (opt.value === "All types") opt.setAttribute("selected", "selected");
+        else opt.removeAttribute("selected");
+      });
+    }
+
+    var hide = clone.querySelector("#hide-watched");
+    if (hide) {
+      hide.checked = false;
+      hide.removeAttribute("checked");
+    }
+
+    var emptyEl = clone.querySelector("#empty-filter");
+    if (emptyEl) emptyEl.classList.remove("visible");
+
+    var n = Object.keys(merged).length;
+    var viewEl = clone.querySelector("#view-line");
+    if (viewEl) {
+      viewEl.textContent =
+        "Watched: " + counts.W + " of " + n + " in this view · Essentials: " +
+        essentialSeen + " of " + essentialTotal;
+    }
+
+    var printEl = clone.querySelector("#print-header");
+    if (printEl) printEl.textContent = "";
+
+    return "<!DOCTYPE html>\n" + clone.outerHTML + "\n";
+  }
+
+  function downloadBlob(filename, mime, text) {
+    var blob = new Blob([text], { type: mime });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function downloadUpdated() {
+    closeExportMenu(false);
+    downloadBlob("avengers-doomsday-checklist.html", "text/html;charset=utf-8", bakeHtml());
+  }
+
+  function printChecklist() {
+    closeExportMenu(false);
+    updatePrintHeader();
+    window.print();
+  }
+
+  function dateStamp(d) {
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return y + "-" + m + "-" + day;
+  }
+
+  function buildProgressExport() {
+    var entries = rows.map(function (row) {
+      return {
+        id: rowId(row),
+        title: rowTitle(row),
+        year: yearOf(row),
+        status: WATCH_LABEL[statusOf(row)] || statusOf(row)
+      };
+    });
+    return {
+      format: "doomsday-checklist-progress",
+      formatVersion: 1,
+      exportedAt: new Date().toISOString(),
+      checklistVersion: DEFAULTS_VERSION,
+      defaultsVersion: DEFAULTS_VERSION,
+      entries: entries
+    };
+  }
+
+  function exportProgress() {
+    closeExportMenu(false);
+    var payload = buildProgressExport();
+    downloadBlob(
+      "doomsday-progress-" + dateStamp(new Date()) + ".json",
+      "application/json;charset=utf-8",
+      JSON.stringify(payload, null, 2) + "\n"
+    );
+  }
+
+  /* ----- Export menu ----- */
+
+  function exportMenuItems() {
+    return exportMenu ? Array.from(exportMenu.querySelectorAll("[role='menuitem']")) : [];
+  }
+
+  function isExportMenuOpen() {
+    return exportMenu && !exportMenu.hasAttribute("hidden");
+  }
+
+  function openExportMenu() {
+    if (!exportMenu || !exportToggle) return;
+    exportMenu.removeAttribute("hidden");
+    exportToggle.setAttribute("aria-expanded", "true");
+    var items = exportMenuItems();
+    if (items[0]) items[0].focus();
+  }
+
+  function closeExportMenu(restoreFocus) {
+    if (!exportMenu || !exportToggle) return;
+    if (!isExportMenuOpen()) {
+      if (restoreFocus) exportToggle.focus();
+      return;
+    }
+    exportMenu.setAttribute("hidden", "");
+    exportToggle.setAttribute("aria-expanded", "false");
+    if (restoreFocus) exportToggle.focus();
+  }
+
+  function toggleExportMenu() {
+    if (isExportMenuOpen()) closeExportMenu(false);
+    else openExportMenu();
+  }
+
+  function onExportToggleClick(ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    toggleExportMenu();
+  }
+
+  function onDocumentPointer(ev) {
+    if (!isExportMenuOpen()) return;
+    if (exportWrap && exportWrap.contains(ev.target)) return;
+    closeExportMenu(false);
+  }
+
+  function onExportKeydown(ev) {
+    if (!isExportMenuOpen()) return;
+    var items = exportMenuItems();
+    var idx = items.indexOf(document.activeElement);
+    if (ev.key === "Escape") {
+      ev.preventDefault();
+      closeExportMenu(true);
+      return;
+    }
+    if (ev.key === "ArrowDown") {
+      ev.preventDefault();
+      if (items.length) items[(idx + 1) % items.length].focus();
+    } else if (ev.key === "ArrowUp") {
+      ev.preventDefault();
+      if (items.length) items[(idx <= 0 ? items.length : idx) - 1].focus();
+    } else if (ev.key === "Home") {
+      ev.preventDefault();
+      if (items[0]) items[0].focus();
+    } else if (ev.key === "End") {
+      ev.preventDefault();
+      if (items.length) items[items.length - 1].focus();
+    } else if (ev.key === "Tab") {
+      closeExportMenu(false);
+    }
+  }
+
+  /* ----- Fuzzy matching ----- */
+
+  function normalizeTitle(s) {
+    s = String(s || "").toLowerCase();
+    s = s.replace(/[’]/g, "'");
+    s = s.replace(/\((?:19|20)\d{2}\s*[-–—]\s*(?:19|20)?\d{0,2}\)/g, " ");
+    s = s.replace(/\((?:19|20)\d{2}\)/g, " ");
+    s = s.replace(/\b(?:19|20)\d{2}\b/g, " ");
+    s = s.replace(/[^a-z0-9]+/g, " ");
+    s = s.replace(/\s+/g, " ").trim();
+    s = s.replace(/^(the|a|an)\s+/, "");
+    return s;
+  }
+
+  function bigrams(s) {
+    if (!s) return [];
+    if (s.length < 2) return [s];
+    var out = [];
+    var i;
+    for (i = 0; i < s.length - 1; i++) out.push(s.substr(i, 2));
+    return out;
+  }
+
+  function diceCoefficient(a, b) {
+    if (a === b) return 1;
+    var A = bigrams(a);
+    var B = bigrams(b);
+    if (!A.length && !B.length) return 1;
+    if (!A.length || !B.length) return 0;
+    var counts = {};
+    var i;
+    for (i = 0; i < A.length; i++) counts[A[i]] = (counts[A[i]] || 0) + 1;
+    var inter = 0;
+    for (i = 0; i < B.length; i++) {
+      if (counts[B[i]]) {
+        inter += 1;
+        counts[B[i]] -= 1;
+      }
+    }
+    return (2 * inter) / (A.length + B.length);
+  }
+
+  function bestCandidate(importedTitle, importedYear) {
+    var norm = normalizeTitle(importedTitle);
+    var best = null;
+    rows.forEach(function (row) {
+      var score = diceCoefficient(norm, normalizeTitle(rowTitle(row)));
+      var year = yearOf(row);
+      var yearMatch = importedYear != null && year === importedYear;
+      if (yearMatch) score = Math.min(1, score + YEAR_BOOST);
+      if (
+        !best ||
+        score > best.score ||
+        (score === best.score && yearMatch && !best.yearMatch)
+      ) {
+        best = {
+          id: rowId(row),
+          title: rowTitle(row),
+          score: score,
+          year: year,
+          yearMatch: yearMatch,
+          row: row
+        };
+      }
+    });
+    return best;
+  }
+
+  function formatScore(score) {
+    return (Math.round(score * 100) / 100).toFixed(2);
+  }
+
+  /* ----- Import ----- */
+
+  function clearImportFile() {
+    if (importFile) importFile.value = "";
+  }
+
+  function focusableInDialog() {
+    if (!importDialog) return [];
+    return Array.from(
+      importDialog.querySelectorAll("button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex='-1'])")
+    ).filter(function (el) {
+      return !el.hidden && el.offsetParent !== null;
+    });
+  }
+
+  function closeImportDialog() {
+    if (!importDialog || importDialog.hasAttribute("hidden")) return;
+    importDialog.setAttribute("hidden", "");
+    if (importDialogBody) importDialogBody.innerHTML = "";
+    if (importDialogTitle) importDialogTitle.textContent = "Import progress";
+    clearImportFile();
+    if (lastFocus && typeof lastFocus.focus === "function") {
+      lastFocus.focus();
+    }
+  }
+
+  function openImportDialog(title) {
+    if (importDialog.hasAttribute("hidden")) lastFocus = document.activeElement;
+    if (importDialogTitle) importDialogTitle.textContent = title || "Import progress";
+    importDialog.removeAttribute("hidden");
+    var focusables = focusableInDialog();
+    var target = focusables[0] || importDialogDismiss;
+    if (target) target.focus();
+  }
+
+  function showImportError(message) {
+    if (!importDialogBody) {
+      window.alert(message);
+      return;
+    }
+    importDialogBody.innerHTML = "";
+    var p = document.createElement("p");
+    p.className = "import-error";
+    p.textContent = message;
+    importDialogBody.appendChild(p);
+    openImportDialog("Import failed");
+  }
+
+  function applyImportedStatus(row, st, persist) {
+    setRowStatus(row, st, persist);
+  }
+
+  function processImport(data) {
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+      showImportError("This is not a Doomsday checklist progress file.");
+      return;
+    }
+    if (data.format !== "doomsday-checklist-progress") {
+      showImportError("This is not a Doomsday checklist progress file.");
+      return;
+    }
+    if (data.formatVersion !== 1) {
+      showImportError("Unsupported progress format version. This checklist accepts formatVersion 1.");
+      return;
+    }
+    if (!Array.isArray(data.entries)) {
+      showImportError("This file has no entries array.");
+      return;
+    }
+
+    var appliedById = 0;
+    var appliedByTitle = 0;
+    var appliedFromReview = 0;
+    var review = [];
+
+    data.entries.forEach(function (entry, index) {
+      if (!entry || typeof entry !== "object") {
+        review.push({
+          importedTitle: "",
+          importedId: "",
+          importedStatus: "",
+          reason: "Entry " + (index + 1) + " is not a valid object.",
+          candidate: null,
+          status: null
+        });
+        return;
+      }
+      var rawId = entry.id;
+      var hasId = rawId != null && String(rawId).trim() !== "";
+      var id = hasId ? normalizeId(rawId) : null;
+      var title = entry.title == null ? "" : String(entry.title);
+      var year = parseYear(entry.year);
+      var st = parseStatus(entry.status);
+      var knownId = id && Object.prototype.hasOwnProperty.call(DEFAULT_BY_ID, id);
+
+      if (hasId && !knownId) {
+        review.push({
+          importedTitle: title,
+          importedId: id,
+          importedStatus: entry.status,
+          reason: "Unknown ID " + id + ". IDs are never skipped silently.",
+          candidate: bestCandidate(title, year),
+          status: st
+        });
+        return;
+      }
+
+      if (knownId) {
+        var row = rowsById[id];
+        if (!st) {
+          review.push({
+            importedTitle: title,
+            importedId: id,
+            importedStatus: entry.status,
+            reason: "Invalid status. Use Watched, Not watched, Partial, Excluded, Review summary, or the codes W, N, P, X, R.",
+            candidate: row ? { id: id, title: rowTitle(row), score: 1, year: yearOf(row), yearMatch: true, row: row } : bestCandidate(title, year),
+            status: null
+          });
+          return;
+        }
+        applyImportedStatus(row, st, false);
+        appliedById += 1;
+        return;
+      }
+
+      var candidate = bestCandidate(title, year);
+      if (!st) {
+        review.push({
+          importedTitle: title,
+          importedId: "",
+          importedStatus: entry.status,
+          reason: "Invalid status. Use Watched, Not watched, Partial, Excluded, Review summary, or the codes W, N, P, X, R.",
+          candidate: candidate,
+          status: null
+        });
+        return;
+      }
+      if (candidate && candidate.score >= FUZZY_THRESHOLD) {
+        applyImportedStatus(candidate.row, st, false);
+        appliedByTitle += 1;
+        return;
+      }
+      review.push({
+        importedTitle: title,
+        importedId: "",
+        importedStatus: entry.status,
+        reason: candidate
+          ? "Title was not a close enough match (score " + formatScore(candidate.score) + ", need " + formatScore(FUZZY_THRESHOLD) + ")."
+          : "No matching title was found in this checklist.",
+        candidate: candidate,
+        status: st
+      });
+    });
+
+    persistState();
+    apply();
+    renderImportSummary({
+      appliedById: appliedById,
+      appliedByTitle: appliedByTitle,
+      appliedFromReview: appliedFromReview,
+      review: review
+    });
+  }
+
+  function renderImportSummary(state) {
+    if (!importDialogBody) return;
+    importDialogBody.innerHTML = "";
+
+    var counts = document.createElement("ul");
+    counts.className = "import-counts";
+    function addCount(label, n) {
+      var li = document.createElement("li");
+      li.textContent = label + ": " + n;
+      counts.appendChild(li);
+    }
+    addCount("Applied by ID", state.appliedById);
+    addCount("Applied by title", state.appliedByTitle);
+    addCount("Applied from review", state.appliedFromReview);
+    addCount("Needs review", state.review.length);
+    importDialogBody.appendChild(counts);
+
+    if (state.review.length) {
+      var heading = document.createElement("h3");
+      heading.className = "import-review-heading";
+      heading.textContent = "Review flagged entries";
+      importDialogBody.appendChild(heading);
+
+      var list = document.createElement("div");
+      list.className = "import-review-list";
+      state.review.forEach(function (item, idx) {
+        var card = document.createElement("div");
+        card.className = "import-review-item";
+        card.setAttribute("data-review-index", String(idx));
+
+        var imported = document.createElement("p");
+        imported.className = "import-review-imported";
+        var bits = [];
+        bits.push(item.importedTitle ? item.importedTitle : "(no title)");
+        if (item.importedId) bits.push("ID " + item.importedId);
+        if (item.importedStatus != null && item.importedStatus !== "") {
+          bits.push("status “" + item.importedStatus + "”");
+        }
+        imported.textContent = "Imported: " + bits.join(" · ");
+        card.appendChild(imported);
+
+        var reason = document.createElement("p");
+        reason.className = "import-review-reason";
+        reason.textContent = item.reason;
+        card.appendChild(reason);
+
+        if (item.candidate) {
+          var cand = document.createElement("p");
+          cand.className = "import-review-candidate";
+          cand.textContent =
+            "Best candidate: " + item.candidate.title +
+            " (ID " + item.candidate.id + ", score " + formatScore(item.candidate.score) + ")";
+          card.appendChild(cand);
+        }
+
+        var actions = document.createElement("div");
+        actions.className = "import-review-actions";
+        var canApply = item.candidate && item.candidate.row && item.status;
+        if (canApply) {
+          var applyBtn = document.createElement("button");
+          applyBtn.type = "button";
+          applyBtn.className = "action-btn";
+          applyBtn.textContent = "Apply to candidate";
+          applyBtn.addEventListener("click", function () {
+            applyImportedStatus(item.candidate.row, item.status, true);
+            apply();
+            state.appliedFromReview += 1;
+            state.review.splice(state.review.indexOf(item), 1);
+            renderImportSummary(state);
+          });
+          actions.appendChild(applyBtn);
+        }
+        var ignoreBtn = document.createElement("button");
+        ignoreBtn.type = "button";
+        ignoreBtn.className = "action-btn import-ignore-btn";
+        ignoreBtn.textContent = "Ignore";
+        ignoreBtn.addEventListener("click", function () {
+          state.review.splice(state.review.indexOf(item), 1);
+          renderImportSummary(state);
+        });
+        actions.appendChild(ignoreBtn);
+        card.appendChild(actions);
+        list.appendChild(card);
+      });
+      importDialogBody.appendChild(list);
+    } else {
+      var done = document.createElement("p");
+      done.className = "import-review-empty";
+      done.textContent = "Nothing left to review.";
+      importDialogBody.appendChild(done);
+    }
+
+    openImportDialog("Import progress");
+  }
+
+  function readFileText(file, onText, onError) {
+    if (file && typeof file.text === "function") {
+      file.text().then(onText, function () {
+        onError("This file could not be opened.");
+      });
+      return;
+    }
+    var reader = new FileReader();
+    reader.onload = function () { onText(String(reader.result || "")); };
+    reader.onerror = function () { onError("This file could not be opened."); };
+    reader.readAsText(file);
+  }
+
+  function onImportFileChange() {
+    var file = importFile && importFile.files && importFile.files[0];
+    if (!file) return;
+    var fileName = String(file.name || "");
+    if (!/\.json$/i.test(fileName)) {
+      showImportError("Please choose a .json progress file. This file’s name doesn’t end in .json.");
+      clearImportFile();
+      return;
+    }
+    readFileText(file, function (text) {
+      var data;
+      try {
+        data = JSON.parse(text);
+      } catch (err) {
+        showImportError("This file could not be read as JSON.");
+        clearImportFile();
+        return;
+      }
+      processImport(data);
+      clearImportFile();
+    }, function (msg) {
+      showImportError(msg);
+      clearImportFile();
+    });
+  }
+
+  function onImportDialogKeydown(ev) {
+    if (importDialog.hasAttribute("hidden")) return;
+    if (ev.key === "Escape") {
+      ev.preventDefault();
+      closeImportDialog();
+      return;
+    }
+    if (ev.key !== "Tab") return;
+    var focusables = focusableInDialog();
+    if (!focusables.length) return;
+    var first = focusables[0];
+    var last = focusables[focusables.length - 1];
+    if (ev.shiftKey && document.activeElement === first) {
+      ev.preventDefault();
+      last.focus();
+    } else if (!ev.shiftKey && document.activeElement === last) {
+      ev.preventDefault();
+      first.focus();
+    }
+  }
+
+  rows.forEach(function (row) {
+    var sel = row.querySelector("select.status-select");
+    sel.addEventListener("change", function () {
+      var st = sel.value;
+      if (!isStatus(st)) return;
+      setRowStatus(row, st, true);
+      apply();
+    });
+  });
+
+  var stored = readStorage();
+  acceptedBaseline = stored.baseline;
+  rows.forEach(function (row) {
+    var id = rowId(row);
+    var st = stored.overrides[id] || defaultStatusForId(id) || "N";
+    setRowStatus(row, st, false);
+  });
+  // Rewrite any title-keyed leftovers as ID keys now that values are loaded.
+  persistState();
+
+  tabButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      tab = btn.getAttribute("data-tab");
+      apply();
+    });
+  });
+  typeSelect.addEventListener("change", apply);
+  hideToggle.addEventListener("change", apply);
+  resetBtn.addEventListener("click", resetToDefaults);
+  updateBtn.addEventListener("click", updateBaseline);
+  if (downloadBtn) downloadBtn.addEventListener("click", downloadUpdated);
+  if (printBtn) printBtn.addEventListener("click", printChecklist);
+  if (exportProgressBtn) exportProgressBtn.addEventListener("click", exportProgress);
+  window.addEventListener("beforeprint", updatePrintHeader);
+
+  if (exportToggle) exportToggle.addEventListener("click", onExportToggleClick);
+  if (exportMenu) exportMenu.addEventListener("keydown", onExportKeydown);
+  document.addEventListener("click", onDocumentPointer);
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape" && isExportMenuOpen() && !(importDialog && !importDialog.hasAttribute("hidden"))) {
+      ev.preventDefault();
+      closeExportMenu(true);
+    }
+  });
+
+  if (importBtn && importFile) {
+    importBtn.addEventListener("click", function () {
+      closeExportMenu(false);
+      importFile.click();
+    });
+    importFile.addEventListener("change", onImportFileChange);
+  }
+  if (importDialogDismiss) importDialogDismiss.addEventListener("click", closeImportDialog);
+  if (importDialog) {
+    importDialog.addEventListener("keydown", onImportDialogKeydown);
+    var backdrop = importDialog.querySelector(".import-dialog-backdrop");
+    if (backdrop) backdrop.addEventListener("click", closeImportDialog);
+  }
+
+  apply();
+})();
+</script>
+</body>
+</html>
